@@ -24,7 +24,7 @@ Although Fudge encoding and GPB are not compatible at the wire level, it is inte
 A basic `.proto` file may contain a taxonomy, message or enumeration definition.
 For example, a basic message containing a person's name, date of birth and contact details might be described as:
 
-```
+<pre>```
 message Person {
   required string name;
   optional date dateOfBirth;
@@ -40,7 +40,7 @@ message Person {
   }
   optional repeated PhoneNumber telephoneNumber;
 }
-```
+```</pre>
 
 The main difference from the GPB format is that the field ordinals can be omitted. Field ordinals can be
 specified using a notation such as `required string name = 1;` for a field definition, but the reduction
