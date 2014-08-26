@@ -1,7 +1,6 @@
 ---
 layout: doc
 title: License
-subtitle: License
 ---
 
 All current Fudge integration libraries are provided under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).

@@ -1,7 +1,6 @@
 ---
 layout: doc
 title: Releases
-subtitle: Releases
 ---
 
 The Fudge Messaging project consists of a number of different sub-projects, which are released independently

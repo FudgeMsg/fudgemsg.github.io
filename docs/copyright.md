@@ -1,7 +1,6 @@
 ---
 layout: doc
 title: Copyright
-subtitle: Copyright
 ---
 
 The initial release of all Fudge libraries was provided by [OpenGamma](http://www.opengamma.com/) Inc.,

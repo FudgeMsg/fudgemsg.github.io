@@ -1,7 +1,6 @@
 ---
 layout: doc
 title: Acronym
-subtitle: Acronym
 ---
 
 Fudge stands for:
