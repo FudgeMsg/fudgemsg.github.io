@@ -59,9 +59,9 @@ A message definition can occur at file level or within a message. A message defi
 
 A top-level message definition may also include one or more taxonomy references to verify the field names
 used are within one or more previously agreed taxonomies, but this functionality is not currently complete
-within the tools. The `extends` clause is used to specify [Message Inheritance].
+within the tools. The `extends` clause is used to specify [Message Inheritance](fudge-proto-inheritance.html).
 
-Message definitions can consist of fields, nested message definitions, and [#enumerations].
+Message definitions can consist of fields, nested message definitions, and enumerations.
 
 
 #### Field definition
@@ -81,7 +81,7 @@ Field modifiers include the following:
 | repeated | Field can appear multiple times in the message. The target language may represent this using a list or array type containing each repeated value. |
 | required | Field must be present in the Fudge message or passed to the construction mechanism. Cannot be used with `optional`. When used with `repeated` means the field must be present at least once |
 
-Field types include the [built-in types|Fudge Proto Types], identifiers for enumerations and other messages.
+Field types include the [built-in types](fudge-proto-types.html), identifiers for enumerations and other messages.
 
 The field identifier must be unique within a message, and will be used within the Fudge message.
 The code generated output will preserve this name in the style of the target language - for example
