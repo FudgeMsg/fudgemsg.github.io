@@ -1,7 +1,6 @@
 ---
 layout: doc
 title: Specification
-subtitle: Specification
 ---
 
 ### Overview
