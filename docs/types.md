@@ -32,15 +32,15 @@ These types are part of the built-in Fudge type dictionary, and must be handled 
 |14 | 0000 1110 | No | UTF-8 encoded string | `String`|
 |15 | 0000 1111 | No | Embedded Fudge Message | `FudgeMsg`|
 |16 | 0001 0000 | N/A | Currently Unallocated |  |
-|17 | 0001 0001 | Yes (4) | byte array of length 4 | `byte\[4\]`|
-|18 | 0001 0010 | Yes (8) | byte array of length 8 | `byte\[8\]`|
-|19 | 0001 0011 | Yes (16) | byte array of length 16 | `byte\[16\]`|
-|20 | 0001 0100 | Yes (20) | byte array of length 20 | `byte\[20\]`|
-|21 | 0001 0101 | Yes (32) | byte array of length 32 | `byte\[32\]`|
-|22 | 0001 0110 | Yes (64) | byte array of length 64 | `byte\[64\]`|
-|23 | 0001 0111 | Yes (128) | byte array of length 128 | `byte\[128\]`|
-|24 | 0001 1000 | Yes (256) | byte array of length 256 | `byte\[256\]`|
-|25 | 0001 1001 | Yes (512) | byte array of length 512 | `byte\[512\]`|
+|17 | 0001 0001 | Yes (4) | byte array of length 4 | `byte[4]`|
+|18 | 0001 0010 | Yes (8) | byte array of length 8 | `byte[8]`|
+|19 | 0001 0011 | Yes (16) | byte array of length 16 | `byte[16]`|
+|20 | 0001 0100 | Yes (20) | byte array of length 20 | `byte[20]`|
+|21 | 0001 0101 | Yes (32) | byte array of length 32 | `byte[32]`|
+|22 | 0001 0110 | Yes (64) | byte array of length 64 | `byte[64]`|
+|23 | 0001 0111 | Yes (128) | byte array of length 128 | `byte[128]`|
+|24 | 0001 1000 | Yes (256) | byte array of length 256 | `byte[256]`|
+|25 | 0001 1001 | Yes (512) | byte array of length 512 | `byte[512]`|
 |26 | 0001 1010 | Yes (4) | Reserved for [Date](type-datetime.html) | Currently unspecified|
 |27 | 0001 1011 | Unknown | Reserved for [Time](type-datetime.html) | Currently unspecified|
 |28 | 0001 1100 | Yes (12) | Reserved for [combined Date and Time](type-datetime.html) | Currently unspecified|
