@@ -12,16 +12,16 @@ as static inner classes.
 
 ### Java command line
 
-Please refer to the [Fudge Proto Command Line](fudge-proto-command.line.html) for full details on
+Please refer to the [Fudge Proto Command Line](fudge-proto-command-line.html) for full details on
 launching the command line `.proto` compiler from the command line. Java specific options are:
 
 | Option | Description |
-| \-lJava | Selects the Java code generator |
-| \-Xequals | Generate `equals` methods for value equality of message fields (default is not to) |
-| \-XfudgeContext=_expression_ | Generates serialization methods that do not require context as a parameter and will use a given global expression specific to the application |
-| \-XgitIgnore | Write a `.gitignore` in the target folder(s) listing the generated `.java` files |
-| \-XhashCode | Generate `hashCode` methods hashing the message field values (default is not to) |
-| \-XtoString | Generate `toString` methods using the commons-lang `ToStringBuilder` (default is not to) |
+| -lJava | Selects the Java code generator |
+| -Xequals | Generate `equals` methods for value equality of message fields (default is not to) |
+| -XfudgeContext=_expression_ | Generates serialization methods that do not require context as a parameter and will use a given global expression specific to the application |
+| -XgitIgnore | Write a `.gitignore` in the target folder(s) listing the generated `.java` files |
+| -XhashCode | Generate `hashCode` methods hashing the message field values (default is not to) |
+| -XtoString | Generate `toString` methods using the commons-lang `ToStringBuilder` (default is not to) |
 
 The method options apply to all output and can be overridden on a per-message basis using the `methods` directive.
 
@@ -104,6 +104,7 @@ constructor (from the perspective of the corresponding `Builder` class) that tak
 the `Builder`. For example, this might be to implement more rigorous business logic constraints:
 
 <pre>
+ /* Foo.proto */
  message Foo {
    optional string name;
    binding Java {
@@ -113,6 +114,7 @@ the `Builder`. For example, this might be to implement more rigorous business lo
 </pre>
 
 <pre>
+ /* FooImpl.java */
  class FooImpl extends Foo {
    /* package */ FooImpl (Foo.Builder builder) {
      super (builder);
@@ -148,7 +150,7 @@ option if they will not result from the field definitions. It takes a comma sepa
  message Foo {
    required string name;
    binding Java {
-     implements "Comparable<Foo>";
+     implements "Comparable&lt;Foo>";
      body &lt;&lt;&lt;CODE
        public int compareTo (Foo o) {
          return getName ().compareTo (o.getName ());
