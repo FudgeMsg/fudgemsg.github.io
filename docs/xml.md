@@ -74,15 +74,15 @@ for binary data or strings that contain Unicode characters. If no encoding is sp
 | 13 | `double[]` | Comma separated list of IEEE754 character representations |
 | 14 | `string` | Characters from the string |
 | 15 | `message` | No character data; the fields of the sub-message as nested elements |
-| 17 | `byte[]` or `byte\[4\]` | Comma separated list of signed 8-bit decimals |
-| 18 | `byte[]` or `byte\[8\]` | Comma separated list of signed 8-bit decimals |
-| 19 | `byte[]` or `byte\[16\]` | Comma separated list of signed 8-bit decimals |
-| 20 | `byte[]` or `byte\[20\]` | Comma separated list of signed 8-bit decimals |
-| 21 | `byte[]` or `byte\[32\]` | Comma separated list of signed 8-bit decimals |
-| 22 | `byte[]` or `byte\[64\]` | Comma separated list of signed 8-bit decimals |
-| 23 | `byte[]` or `byte\[128\]` | Comma separated list of signed 8-bit decimals |
-| 24 | `byte[]` or `byte\[256\]` | Comma separated list of signed 8-bit decimals |
-| 25 | `byte[]` or `byte\[512\]` | Comma separated list of signed 8-bit decimals |
+| 17 | `byte[]` or `byte[4]` | Comma separated list of signed 8-bit decimals |
+| 18 | `byte[]` or `byte[8]` | Comma separated list of signed 8-bit decimals |
+| 19 | `byte[]` or `byte[16]` | Comma separated list of signed 8-bit decimals |
+| 20 | `byte[]` or `byte[20]` | Comma separated list of signed 8-bit decimals |
+| 21 | `byte[]` or `byte[32]` | Comma separated list of signed 8-bit decimals |
+| 22 | `byte[]` or `byte[64]` | Comma separated list of signed 8-bit decimals |
+| 23 | `byte[]` or `byte[128]` | Comma separated list of signed 8-bit decimals |
+| 24 | `byte[]` or `byte[256]` | Comma separated list of signed 8-bit decimals |
+| 25 | `byte[]` or `byte[512]` | Comma separated list of signed 8-bit decimals |
 | 26 | `date` | RFC3339 or other common convention |
 | 27 | `time` | RFC3339 or other common convention |
 | 28 | `datetime` | RFC3339 or other common convention |
