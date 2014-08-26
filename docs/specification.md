@@ -81,7 +81,7 @@ which application-specific decoding logic should be used.
 
 **Taxonomy** - Two bytes acting as an identifier for the taxonomy to be looked up in the taxonomy reference table
 specific to the message sender.
-This is *not* a globally unique reference, and is specific to the taxonomy of the message encoder.
+This is **not** a globally unique reference, and is specific to the taxonomy of the message encoder.
 
 **Message Size** - Four bytes, defining the size, in bytes, of the message.
 The message size is the total size of all data in the message, and includes the message envelope itself.
