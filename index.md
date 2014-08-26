@@ -29,7 +29,7 @@ creating a nested structure of arbitary depth and complexity.
 A Fudge message is **field-based**. Each message or sub-message is a partly ordered collection of fields.
 The field stores the data item, plus a minimum of two bytes of meta-data.
 
-A Fudge message is **typesafe**. Types add meaning and safety to data.
+A Fudge message is **typesafe**. [Types](types.html) add meaning and safety to data.
 This is especially useful when storing data for longer periods of time or when receiving data without a schema.
 Each field uses a single byte to store the type.
 Fudge defines a core set of about 30 types and this can be extended if desired.
