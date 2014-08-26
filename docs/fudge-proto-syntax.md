@@ -43,7 +43,7 @@ by the tools will use this prefix for temporary variables. Identifiers are case 
 
 ### Top Level Elements
 
-The `.proto` files are block based using C-style `{` and `\`} sequences to contain block contents.
+The `.proto` files are block based using C-style `{` and `}` sequences to contain block contents.
 Elements within a block are `;` terminated unless they are a block element.
 
 
@@ -52,7 +52,7 @@ Elements within a block are `;` terminated unless they are a block element.
 A message definition can occur at file level or within a message. A message definition consists of:
 
 <pre>
- message &lt;message-identifier> \[extends &lt;base-message-identifier>] {
+ message &lt;message-identifier> [extends &lt;base-message-identifier>] {
    &lt;message-definitions>
  }
 </pre>
@@ -69,7 +69,7 @@ Message definitions can consist of fields, nested message definitions, and [#enu
 A field definition consists of:
 
 <pre>
- [<modifiers>] <field-type> <identifier> [<ordinal>] [<default>];
+ [&lt;modifiers>] &lt;field-type> &lt;identifier> [&lt;ordinal>] [&lt;default>];
 </pre>
 
 Field modifiers include the following:
@@ -142,8 +142,8 @@ for a given language. For example:
  message Foo {
    ... message definitions
 
-   binding <language-identifier> {
-     <option-identifier> <option-value>;
+   binding &lt;language-identifier> {
+     &lt;option-identifier> &lt;option-value>;
      ...
    }
  } 
