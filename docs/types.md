@@ -16,31 +16,31 @@ These types are part of the built-in Fudge type dictionary, and must be handled 
 
 | Type ID (Decimal) | Type ID (Binary) | Fixed Width | Description | Java Type |
 | 0 | 0000 0000 | Yes (0) | Unsized indicator value |  [IndicatorType](type-indicator.html) |
-| 1 | 0000 0001 | Yes (1) | Boolean | {{boolean}}|
-|  2 | 0000 0010 | Yes (1) | signed 8-bit integer | {{byte}}|
-| 3 | 0000 0011 | Yes (2) | signed 16-bit integer | {{short}}|
-| 4 | 0000 0100 | Yes (4) | signed 32-bit integer | {{int}}|
-| 5 | 0000 0101 | Yes (8) | signed 64-bit integer | {{long}}|
-| 6 | 0000 0110 | No | byte array | {{byte[]}}|
-| 7 | 0000 0111 | No | Array of signed 16-bit integer | {{short[]}}|
-| 8 | 0000 1000 | No | Array of signed 32-bit integer | {{int[]}}|
-| 9 | 0000 1001 | No | Array of signed 64-bit integer | {{long[]}}|
-|10 | 0000 1010 | Yes (4) | 32-bit floating point|{{float}}|
-| 11 | 0000 1011 | Yes (8) | 64-bit floating point|{{double}}|
-|12 | 0000 1100 | No | Array of 32-bit floating points | {{float[]}}|
-|13 | 0000 1101 | No | Array of 64-bit floating points | {{double[]}}|
-|14 | 0000 1110 | No | UTF-8 encoded string | {{String}}|
-|15 | 0000 1111 | No | Embedded Fudge Message | {{FudgeMsg}}|
+| 1 | 0000 0001 | Yes (1) | Boolean | `boolean`|
+|  2 | 0000 0010 | Yes (1) | signed 8-bit [integer](type-integer.html) | `byte`|
+| 3 | 0000 0011 | Yes (2) | signed 16-bit integer | `short`|
+| 4 | 0000 0100 | Yes (4) | signed 32-bit integer | `int`|
+| 5 | 0000 0101 | Yes (8) | signed 64-bit integer | `long`|
+| 6 | 0000 0110 | No | byte array | `byte[]`|
+| 7 | 0000 0111 | No | Array of signed 16-bit integer | `short[]`|
+| 8 | 0000 1000 | No | Array of signed 32-bit integer | `int[]`|
+| 9 | 0000 1001 | No | Array of signed 64-bit integer | `long[]`|
+|10 | 0000 1010 | Yes (4) | 32-bit floating point|`float`|
+| 11 | 0000 1011 | Yes (8) | 64-bit floating point|`double`|
+|12 | 0000 1100 | No | Array of 32-bit floating points | `float[]`|
+|13 | 0000 1101 | No | Array of 64-bit floating points | `double[]`|
+|14 | 0000 1110 | No | UTF-8 encoded string | `String`|
+|15 | 0000 1111 | No | Embedded Fudge Message | `FudgeMsg`|
 |16 | 0001 0000 | N/A | Currently Unallocated |  |
-|17 | 0001 0001 | Yes (4) | byte array of length 4 | {{byte\[4\]}}|
-|18 | 0001 0010 | Yes (8) | byte array of length 8 | {{byte\[8\]}}|
-|19 | 0001 0011 | Yes (16) | byte array of length 16 | {{byte\[16\]}}|
-|20 | 0001 0100 | Yes (20) | byte array of length 20 | {{byte\[20\]}}|
-|21 | 0001 0101 | Yes (32) | byte array of length 32 | {{byte\[32\]}}|
-|22 | 0001 0110 | Yes (64) | byte array of length 64 | {{byte\[64\]}}|
-|23 | 0001 0111 | Yes (128) | byte array of length 128 | {{byte\[128\]}}|
-|24 | 0001 1000 | Yes (256) | byte array of length 256 | {{byte\[256\]}}|
-|25 | 0001 1001 | Yes (512) | byte array of length 512 | {{byte\[512\]}}|
+|17 | 0001 0001 | Yes (4) | byte array of length 4 | `byte\[4\]`|
+|18 | 0001 0010 | Yes (8) | byte array of length 8 | `byte\[8\]`|
+|19 | 0001 0011 | Yes (16) | byte array of length 16 | `byte\[16\]`|
+|20 | 0001 0100 | Yes (20) | byte array of length 20 | `byte\[20\]`|
+|21 | 0001 0101 | Yes (32) | byte array of length 32 | `byte\[32\]`|
+|22 | 0001 0110 | Yes (64) | byte array of length 64 | `byte\[64\]`|
+|23 | 0001 0111 | Yes (128) | byte array of length 128 | `byte\[128\]`|
+|24 | 0001 1000 | Yes (256) | byte array of length 256 | `byte\[256\]`|
+|25 | 0001 1001 | Yes (512) | byte array of length 512 | `byte\[512\]`|
 |26 | 0001 1010 | Yes (4) | Reserved for [Date](type-datetime.html) | Currently unspecified|
 |27 | 0001 1011 | Unknown | Reserved for [Time](type-datetime.html) | Currently unspecified|
 |28 | 0001 1100 | Yes (12) | Reserved for [combined Date and Time](type-datetime.html) | Currently unspecified|
