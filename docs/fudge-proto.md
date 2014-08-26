@@ -24,7 +24,7 @@ Although Fudge encoding and GPB are not compatible at the wire level, it is inte
 A basic `.proto` file may contain a taxonomy, message or enumeration definition.
 For example, a basic message containing a person's name, date of birth and contact details might be described as:
 
-<pre>```
+<pre>
 message Person {
   required string name;
   optional date dateOfBirth;
@@ -40,7 +40,7 @@ message Person {
   }
   optional repeated PhoneNumber telephoneNumber;
 }
-```</pre>
+</pre>
 
 The main difference from the GPB format is that the field ordinals can be omitted. Field ordinals can be
 specified using a notation such as `required string name = 1;` for a field definition, but the reduction
@@ -58,11 +58,11 @@ comparisons, hash codes, and string representations.
 
 To get started you will need the pre-built Jar file, available from [releases](releases.html),
 in your class path and use the [Command Line Reference](fudge-proto-command-line.html) or
-[Ant](Java Proto Implementation#ant) if you are working with Java.
+[Ant](fudge-proto-java.html) if you are working with Java.
 You will also need the [Antlr 3](http://www.antlr.org/) Java library.
 
 Or, if you want to get involved with the code, check out the repository
-from [Git Hub](http://github.com/FudgeMsg/Fudge-Proto).
+from [GitHub](http://github.com/FudgeMsg/Fudge-Proto).
 
 ### Further Reference
 
@@ -72,3 +72,4 @@ from [Git Hub](http://github.com/FudgeMsg/Fudge-Proto).
 * [External References](fudge-proto-references.html)
 * [Fudge Proto Command Line](fudge-proto-command-line.html)
 * [Java Implementation](fudge-proto-java.html)
+
