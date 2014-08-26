@@ -90,9 +90,9 @@ should be avoided at all costs.
 
 There are two primary reasons for this:
 
-# The existing set of fixed-width types supports every major binary size up to 512 bytes, meaning that almost all
+1. The existing set of fixed-width types supports every major binary size up to 512 bytes, meaning that almost all
 well-understood fixed width data formats can be handled - GUID, IPv6 address, RSA key, DSA key, SHA-1 digest, MD5 digest
-# As sizes get beyond these known values, the added burden of modelling them as a variable-width field is trumped
+2. As sizes get beyond these known values, the added burden of modelling them as a variable-width field is trumped
 by the size of the data payload itself (so adding 2 bytes to encode the length of a 1024 byte field is inconsequential).
 
 In general, well written Fudge-based systems rely on convention rather than specification to determine the mapping.

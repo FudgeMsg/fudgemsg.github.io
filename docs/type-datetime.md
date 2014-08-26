@@ -25,9 +25,9 @@ The month and day, or just the day can be omitted by using the value 0. Values o
 valid in the month field. For example:
 
 | Date            | Coded values   | Packed value |
-| 31 January 2010 | 2010, 1, 31    | {{0000 0000 0000 1111 1011 010**0 001**1 1111}} |
-| August 2000     | 2000, 8, 0     | {{0000 0000 0000 1111 1010 000**1 000**0 0000}} |
-| 3,000,000 BC    | -3000000, 0, 0 | {{1010 0100 0111 0010 1000 000**0 000**0 0000}} |
+| 31 January 2010 | 2010, 1, 31    | `0000 0000 0000 1111 1011 010  0 001  1 1111` |
+| August 2000     | 2000, 8, 0     | `0000 0000 0000 1111 1010 000  1 000  0 0000` |
+| 3,000,000 BC    | -3000000, 0, 0 | `1010 0100 0111 0010 1000 000  0 000  0 0000` |
 
 Note the colors are to show where the fields start/end in the packed value - they have no other meaning.
 Clearly some values are not valid dates and should not be used. The behavior of an invalid date value is undefined.
@@ -40,8 +40,8 @@ From 2013-03-13, the specification has been extended to support two special-case
 and maximum/far-future. These can be mapped to concepts in a date library, such as JSR-310 LocalDate.MAX.
 
 | Date              | Packed value                                                                       |
-| MAX or far-future | {{0111 1111 1111 1111 1111 111**1 111**1 1111}} |
-| MIN or far-past   | {{1000 0000 0000 0000 0000 000**1 111**1 1111}} |
+| MAX or far-future | `0111 1111 1111 1111 1111 111  1 111  1 1111` |
+| MIN or far-past   | `1000 0000 0000 0000 0000 000  1 111  1 1111` |
 
 This corresponds to using month=15 and day=31 as a marker to indicate max/min, with the year set to the largest
 or smallest possible. This design choice was made to be as backwards compatible as reasonably
