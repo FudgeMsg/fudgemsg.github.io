@@ -22,12 +22,12 @@ The classic example of how this works together (and contrasts with a system like
 in the case of integral values:
 
 * Fudge stores them in native network byte order integral format, Google Protocol Buffers stores them in zigzag var-128 encoding.
-* Fudge shrinks size by storing values smaller than the specified type in a smaller type
+* Fudge shrinks size by storing values smaller than the specified type in a smaller type.
 (for example, if a value of 4 is provided for an int32 type, an int8 will actually be encoded).
-    * This has the desired effect of storing fewer bytes for small integral values, without the CPU overhead of var-128 encoding
-* Fudge allows for field names to be included in the data stream, linked in via a taxonomy, or excluded altogether
-    * Google Protocol Buffers only allows them to be excluded entirely
-* Key message and field boundaries are aligned on 32 and 16 bytes accordingly
+This has the desired effect of storing fewer bytes for small integral values, without the CPU overhead of var-128 encoding.
+* Fudge allows for field names to be included in the data stream, linked in via a taxonomy, or excluded altogether.
+Google Protocol Buffers only allows them to be excluded entirely.
+* Key message and field boundaries are aligned on 32 and 16 bytes accordingly.
 
 
 ### Total Overhead
@@ -94,7 +94,7 @@ A particular field is encoded in the following manner:
  | Field Prefix | Type    | Ordinal  | Name                       | Data      |
  |  1 byte      |  1 byte |  2 bytes |  variable, up to 256 bytes |  variable |
 
-**Field Prefix* - See below.
+**Field Prefix** - See below.
 
 **Type** - 1 byte indicating the type of data included
 
@@ -107,21 +107,17 @@ A particular field is encoded in the following manner:
 #### Field Prefix
 The field prefix is a 1-byte header which contains the following bit fields:
 
-```
  | Bit 7            | Bits 6-5                      | Bit 4        | Bit 3     | Bits 2-0         |
  | 1 if fixed width | Variable Width Size Indicator | 1 if ordinal | 1 if name | Future expansion |
  | 0 if variable    | Variable Width Size Indicator | 0 if not     | 0 if not  |                  |
-```
 
 **Variable Width Size Indicator** - These two bytes will have one of the following values:
 
-```
  | Value | Meaning                                                          |
  | 00    | Either a fixed width type, or an empty variable width field      |
  | 01    | 1 byte is used to encode the size of the variable width payload  |
  | 10    | 2 bytes is used to encode the size of the variable width payload |
  | 11    | 4 bytes is used to encode the size of the variable width payload |
-```
 
 #### Types
 The Fudge specification includes a set of Standard [Types](types.html) that any compliant system must support,
