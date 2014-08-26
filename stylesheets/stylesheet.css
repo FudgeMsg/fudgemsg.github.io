@@ -165,7 +165,7 @@ code {
   padding: 0 2px;
 }
 
-pre code {
+p code {
   background-color: #fff;
   font-size: 12px;
   display: block;
