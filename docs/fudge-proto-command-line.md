@@ -6,10 +6,10 @@ title: Fudge-Proto command line
 There are three basic ways to run the command line compiler:
 
 * With antlr3 and the Fudge-Java implementation jar in the `ext` folder, the Fudge-Proto
-command line compiler can be launched as `java -jar fudge-proto.jar <i>options</i>`.
+command line compiler can be launched as `java -jar fudge-proto.jar` *`options`*.
 * With antlr3, Fudge-Java and Fudge-Proto jars on the classpath, the command line compiler
-can be launched as `java org.fudgemsg.proto.CommandLine <i>options</i>`.
-* If installed from the RPM bundle, it can be invoked as ``fudge-proto <i>options</i>`.
+can be launched as `java org.fudgemsg.proto.CommandLine` *`options`*.
+* If installed from the RPM bundle, it can be invoked as ``fudge-proto` *`options`*.
 
 Available options (always starting with a - character) are:
 
