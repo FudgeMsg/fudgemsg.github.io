@@ -24,9 +24,9 @@ in the case of integral values:
 * Fudge stores them in native network byte order integral format, Google Protocol Buffers stores them in zigzag var-128 encoding.
 * Fudge shrinks size by storing values smaller than the specified type in a smaller type
 (for example, if a value of 4 is provided for an int32 type, an int8 will actually be encoded).
-** This has the desired effect of storing fewer bytes for small integral values, without the CPU overhead of var-128 encoding
+    * This has the desired effect of storing fewer bytes for small integral values, without the CPU overhead of var-128 encoding
 * Fudge allows for field names to be included in the data stream, linked in via a taxonomy, or excluded altogether
-** Google Protocol Buffers only allows them to be excluded entirely
+    * Google Protocol Buffers only allows them to be excluded entirely
 * Key message and field boundaries are aligned on 32 and 16 bytes accordingly
 
 
@@ -59,6 +59,7 @@ For more information, see the [Taxonomy](taxonomy.html) page.
 ### Message Envelope
 
 Encoding a Fudge message involves writing two distinct elements:
+
 * A fixed-size Message Header, which contains processing directives for the message
 * A series of fields, terminated by a special field type
 
