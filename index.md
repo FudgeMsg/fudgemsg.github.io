@@ -53,7 +53,7 @@ Fudge is in active use. Key components are:
 * A [C++](docs/cpp-development.html) implementation; and
 * A [Google Protocol Buffers](docs/fudge-proto.html) compatibility library.
 
-You can track the precise status in our [Releases](releases.html) page.
+You can track the precise status in our [Releases](docs/releases.html) page.
 
 
 ### Why Should I Use Fudge?

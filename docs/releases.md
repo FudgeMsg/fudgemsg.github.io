@@ -27,8 +27,6 @@ The binary encoding format is considered stable, although additional types may b
 #### Release v0.2
 
 Released 2010-02-25.
-Release of [Fudge Proto](fudge-proto.html), support for [C applications](c-development.html),
-support for streaming, and nearly finalized binary data format.
 
 This release focused on making the project more developer friendly.
 There are a number of enhancements that support this effort:
@@ -59,3 +57,8 @@ encode differently, you won't notice any change in the binary encoding specifica
 
 Released late 2009.
 The first reference implementation in Java and C#.
+
+
+#### Distribution directory
+
+Simple distribution [directory](http://dist.fudgemsg.org/java/dist/).
