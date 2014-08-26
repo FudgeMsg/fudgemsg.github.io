@@ -157,7 +157,7 @@ option if they will not result from the field definitions. It takes a comma sepa
        }
  CODE;
    }
-&lt;}
+}
 </pre>
 
 
