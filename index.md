@@ -52,7 +52,7 @@ Fudge is in active use. Key components are:
 * A [C](docs/c-development.html) reference implementation.
 * A [C++](docs/cpp-development.html) implementation.
 * A [Google Protocol Buffers](docs/fudge-proto.html) compatibility library.
-* Conversion to [XML](docs/xml/html) and [JSON](docs/json/html) is supported.
+* Conversion to [XML](docs/xml.html) and [JSON](docs/json.html) is supported.
 
 You can track the precise status in our [Releases](docs/releases.html) page.
 
