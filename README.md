@@ -1,6 +1,6 @@
 Website of Fudge Messaging Project
 ----------------------------------
 
-This repositorty contains the website http://fudgemsg.github.io
+This GitHub repo is the website for Fudge, accessed through http://fudgemsg.github.io
 
 
