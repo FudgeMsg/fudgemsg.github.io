@@ -74,11 +74,6 @@ something similar) the schema for each type of message channel, you might be bet
 ### Project Details
 * [License](docs/license.html) : Fudge libraries are offered under the [APLv2](http://www.apache.org/licenses/LICENSE-2.0.html).
 * [Copyright](docs/copyright.html) : Currently, all copyright to Fudge libraries is held by [OpenGamma](http://www.opengamma.com/) Inc.
-* [Sponsorship](docs/sponsorship.html) : The Fudge Messaging project is sponsored by [OpenGamma](http://www.opengamma.com/).
+* Sponsorship : The Fudge Messaging project is sponsored by [OpenGamma](http://www.opengamma.com/).
+* Forum : The Nabble [forum](http://fudge-messaging-discussion.36728.n3.nabble.com/).
 
-
-### Getting Started
-The easiest way to get started is to look at the [Encoding Specification](docs/specification.html),
-or the [Types](docs/types.html) taxonomy, or the [Source Code](docs/source-code.html).
-Then, join the [Mailing List](docs/mailing-list.html).
-If you're looking to help us out, take a look at the [Ways To Help](docs/help.html) page.
