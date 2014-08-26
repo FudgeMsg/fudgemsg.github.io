@@ -13,7 +13,7 @@ The main principles that we're trying to follow:
 
 * Keep the data structure close to the object structure, but if in conflict design for the message.
 * Make interoperability between platforms the default - i.e. encourage people to avoid things like platform-specific namespaces on types.
-* Support [evolvability of data|#evolvability] natively within the framework, don't make each developer have to bolt this on.
+* Support evolvability of data natively within the framework, don't make each developer have to bolt this on.
 * Keep it easy to use - both for developers hand-coding message/object conversions and for the automated [code generator](fudge-proto.html).
 * Don't restrict programming patterns, in particular don't prevent immutable objects.
 
@@ -28,7 +28,7 @@ Fudge implementation exists. Terminology can vary between languages so we will u
 | reference | Any field is a reference if it is a way of directly or indirectly accessing the containing object, or another object's fields. Depending on the language it may be a pointer, a handle, or the full content of the referenced language. |
 | type | A set of fields that objects of that type will hold. A class in C# or Java languages. |
 
-h2. Basic object representation
+### Basic object representation
 
 Every object is represented by a Fudge message. The message field with ordinal 0, or labelled with the 
 empty string, is used to indicate the object type. Object fields are represented by further message fields.
