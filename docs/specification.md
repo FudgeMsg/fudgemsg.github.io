@@ -10,6 +10,7 @@ While the term "Fudge" can be used to mean multiple things, fundamentally it is 
 can be used to generate and consume data which adheres to the Fudge Encoding Specification.
 
 This specification is designed with the following key characteristics:
+
 * **Compactness**. Fudge-encoded data should be as small as reasonable.
 * **Hardware Efficiency**. Key data structures should be easy to process in hardware or in embedded systems.
 * **Software Efficiency**. Key data structures should be simple to encode and decode in software, and should tax the
@@ -67,10 +68,8 @@ whether top-level fields or embedded (sub-message) fields. Therefore, sub-messag
 h3. Message Header
 Each message envelope begins with the following sequence:
 
-```
  | Processing Directives | Schema Version | Taxonomy | Message Size |
  |  1 byte               |  1 byte        |  2 bytes |  4 bytes     |
-```
 
 **Processing Directive** - One byte containing a bit field specifying options for the processing of the message.
 This byte is currently entirely for future expansion and to improve the alignment of the fields in the message header,
@@ -91,10 +90,8 @@ The message size is the total size of all data in the message, and includes the 
 ### Field Encoding
 A particular field is encoded in the following manner:
 
-```
  | Field Prefix | Type    | Ordinal  | Name                       | Data      |
  |  1 byte      |  1 byte |  2 bytes |  variable, up to 256 bytes |  variable |
-```
 
 **Field Prefix* - See below.
 
