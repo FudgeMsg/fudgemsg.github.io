@@ -198,7 +198,7 @@ It is a comma separated list of directives, for example:
 
 The directives available are:
 
-|| Directive || Meaning ||
+| Directive | Meaning |
 | equals | Generate equals method for this message |
 | no-equals | Do not generate equals method for this message |
 | hashCode | Generate hashCode method for this message |
@@ -227,6 +227,7 @@ be specified by calling a method on the builder.
 For example:
 
 <pre>
+ /* Foo.proto */
  message Foo {
    required string name;
    required string email;
@@ -236,6 +237,7 @@ For example:
 Will not require the builder pattern and create the following (some items omitted for clarity):
 
 <pre>
+ /* Foo.java */
  public class Foo {
    private final String _name;
    private final String _email;
@@ -255,6 +257,7 @@ Will not require the builder pattern and create the following (some items omitte
 Whereas, if a fields is made optional the builder pattern will be used - for example:
 
 <pre>
+ /* Foo.proto */
  message Foo {
    required string name;
    optional string email;
@@ -264,6 +267,7 @@ Whereas, if a fields is made optional the builder pattern will be used - for exa
 Will generate (some artifacts have been omitted for clarity):
 
 <pre>
+ /* Foo.java */
 public class Foo {
   public static class Builder {
     private final String _name;
@@ -381,6 +385,7 @@ It is likely that base classes will not have these methods if they are salvaged 
 part of a supplied package. For example:
 
 <pre>
+ /* OriginalBaseClass.proto */
  class OriginalBaseClass {
    private int _foo;
    public int getFoo () {
@@ -396,6 +401,7 @@ Instead of inheriting directly from the above class, creating an intermediate on
 the required methods and uses the methods and constructor available in the super-class. For example:
 
 <pre>
+ /* IntermediateClass.proto */
  class IntermediateClass extends OriginalBaseClass {
    protected IntermediateClass (IntermediateClass source) {
      super ();
@@ -414,6 +420,7 @@ the required methods and uses the methods and constructor available in the super
 Which then allows:
 
 <pre>
+ /* ExtendsBaseClass.proto */
  message ExtendsBaseClass extends IntermediateClass {
    required int bar;
  }
