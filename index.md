@@ -47,11 +47,12 @@ content, it can be used with HTTP, JMS, AMQP and many other underlying transport
 Fudge is in active use. Key components are:
 
 * A binary [Encoding Specification](docs/specification.html) that defines how Fudge data is to be encoded;
-* A [Java](docs/java-development.html) reference implementation;
-* A [C#/.Net](docs/csharp-development.html) reference implementation;
-* A [C](docs/c-development.html) reference implementation; and
-* A [C++](docs/cpp-development.html) implementation; and
+* A [Java](docs/java-development.html) reference implementation.
+* A [C#/.Net](docs/csharp-development.html) reference implementation.
+* A [C](docs/c-development.html) reference implementation.
+* A [C++](docs/cpp-development.html) implementation.
 * A [Google Protocol Buffers](docs/fudge-proto.html) compatibility library.
+* Conversion to [XML](docs/xml/html) and [JSON](docs/json/html) is supported.
 
 You can track the precise status in our [Releases](docs/releases.html) page.
 
