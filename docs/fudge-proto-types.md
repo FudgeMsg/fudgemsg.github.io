@@ -22,7 +22,7 @@ These are listed below, with the mappings used in the target languages:
 | `time` | | time of day | `javax.time.calendar.TimeProvider` | ? |
 
 Arrays of these can be specified using a `[]` suffix which may optionally include the required length,
-e.g. `byte\[16]`. When lengths are specified, it should not be possible to set the field to an array of
+e.g. `byte[16]`. When lengths are specified, it should not be possible to set the field to an array of
 different length, and a Fudge message containing such arrays will be discarded as invalid.
 There is no limit on the number of dimensions.
 
@@ -31,7 +31,7 @@ Otherwise they are encoded as a Fudge sub-message.
 The sub-message contains repeated fields with no ordinals or names that contain the array elements.
 These may in turn be sub-messages, the Fudge specification puts no limit on how deep these may be nested, so
 there is no limit on the number of dimensions that can be specified. Dimensions are read from left to right,
-so a type of `string\[x][]\[y]` would be encoded as a sub-message containing `x` fields which are sub-messages
+so a type of `string[x][][y]` would be encoded as a sub-message containing `x` fields which are sub-messages
 containing an arbitrary number of fields, which are sub-messages containing `y` fields of type `string`.
 
 A code generater might expose a repeated field as an array, but arrays are not the same as a repeated field, for example:
