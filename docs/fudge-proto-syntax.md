@@ -14,22 +14,22 @@ comment */
 // this is a single-line comment
 </pre>
 
-A documentation block comment `** .. *` is also defined and can be used to prefix an element with documentation
+A documentation block comment `/** .. */` is also defined and can be used to prefix an element with documentation
 that will be carried through to the target language. This is not currently implemented, and such comments
 are ignored at the moment. For example:
 
 <pre>
-/* Copyright statement
-ignored by the code generator */
+ /* Copyright statement
+    ignored by the code generator */
 
-/**
-* Information about the message that will be present
-* in any resulting Java or C# code for use by that
-* languages documentation tools.
-*/
-message MyMessage {
-...
-}
+ /**
+  * Information about the message that will be present
+  * in any resulting Java or C# code for use by that
+  * languages documentation tools.
+  */
+ message MyMessage {
+   ...
+ }
 </pre>
 
 Any **string literals** are quoted using " characters, with \ as an escape for embedded ", \ and control
@@ -52,8 +52,8 @@ Elements within a block are `;` terminated unless they are a block element.
 A message definition can occur at file level or within a message. A message definition consists of:
 
 <pre>
- message <message-identifier> [extends <base-message-identifier>] {
-   <message-definitions>
+ message &lt;message-identifier> \[extends &lt;base-message-identifier>] {
+   &lt;message-definitions>
  }
 </pre>
 
@@ -68,9 +68,9 @@ Message definitions can consist of fields, nested message definitions, and [#enu
 
 A field definition consists of:
 
-{code}
+<pre>
  [<modifiers>] <field-type> <identifier> [<ordinal>] [<default>];
-{code}
+</pre>
 
 Field modifiers include the following:
 
