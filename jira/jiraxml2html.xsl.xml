@@ -9,29 +9,27 @@
 	<xsl:param name="title_summary" select="'Summary'"/>
 	<xsl:param name="title_status" select="'Status'"/>
 	<xsl:param name="title_resolution" select="'Resolution'"/>
-
-	<xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'"/>
-	<xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ '"/>
+  <xsl:param name="title_created" select="'Created'"/>
 
 	<xsl:template match="/rss/channel">
 		<html>
 			<head>
-				<link rel="stylesheet" href="http://confluence.atlassian.com/styles/main-action.css" type="text/css"/>
 				<title>RSS - <xsl:value-of select="title"/></title>
 			</head>
 			<body>
 				<table class="grid" cellspacing="0" width="100%">
 					<caption style="text-align: left; font-weight: bold">
-							<a href="{$url}"><xsl:value-of select="title"/></a>
+							<xsl:value-of select="title"/>
 							<span class="smalltext"> (<xsl:value-of select="count(item)"/> issues)</span>
 						</caption>
 					<tbody>
 						<tr>
+              <th style="text-align: left;"> <xsl:value-of select="$title_key"/> </th>
 							<th style="text-align: left;"> <xsl:value-of select="$title_type"/> </th>
-							<th style="text-align: left;"> <xsl:value-of select="$title_key"/> </th>
 							<th style="text-align: left;"> <xsl:value-of select="$title_summary"/> </th> 
 							<th style="text-align: left;"> <xsl:value-of select="$title_status"/> </th>
 							<th style="text-align: left;"> <xsl:value-of select="$title_resolution"/> </th>
+              <th style="text-align: left;"> <xsl:value-of select="$title_created"/> </th>
 						</tr>
 						<xsl:for-each select="item">
 							<tr>
@@ -41,12 +39,24 @@
 										<xsl:otherwise>rowAlternate</xsl:otherwise>
 									</xsl:choose>
 								</xsl:attribute>
+                <xsl:apply-templates select="key"/>
 								<xsl:apply-templates select="type"/>
-								<xsl:apply-templates select="key"/>
 								<xsl:apply-templates select="summary"/>
 								<xsl:apply-templates select="status"/>
 								<xsl:apply-templates select="resolution"/>
+                <xsl:apply-templates select="created"/>
 							</tr>
+              <tr>
+                <td colspan="6">
+                  <xsl:attribute name="class">
+                    <xsl:choose>
+                      <xsl:when test="position() mod 2 = 0">rowNormal</xsl:when>
+                      <xsl:otherwise>rowAlternate</xsl:otherwise>
+                    </xsl:choose>
+                  </xsl:attribute>
+                  <xsl:apply-templates select="description"/>
+                </td>
+              </tr>
 						</xsl:for-each>
 
 					</tbody>
@@ -57,42 +67,72 @@
 
 
 	<xsl:template match="type">
-		<td nowrap="true">
-			<a href="{../link}"><img src="{../link}/../../images/icons/{translate(., $uppercase, $lowercase)}.gif" alt="{.}" title="{.}" border="0"/></a>
-		</td>
+    <td nowrap="true">
+      <xsl:value-of select="."/>
+    </td>
 	</xsl:template>
 
 	<xsl:template match="key">
 		<td nowrap="true">
-			<a href="{../link}"><xsl:value-of select="."/></a>
+			<xsl:value-of select="."/>
 		</td>
 	</xsl:template>
 
 	<xsl:template match="summary">
-		<td nowrap="true">
-			<a href="{../link}"><xsl:value-of select="."/></a>
-		</td>
+    <td nowrap="true">
+      <xsl:value-of select="."/>
+    </td>
 	</xsl:template>
 
 	<xsl:template match="status">
-		<td nowrap="true">
-			<img src="{../link}/../../images/icons/status_{translate(., $uppercase, $lowercase)}.gif" border="0"/><xsl:text> </xsl:text><xsl:value-of select="."/>
-		</td>
+    <td nowrap="true">
+      <xsl:value-of select="."/>
+    </td>
 	</xsl:template>
 
 	<xsl:template match="resolution">
-		<td nowrap="true">
-			<font color="#ff0000"><xsl:value-of select="translate(., $lowercase, $uppercase)"/></font>
-		</td>
+    <td nowrap="true">
+      <xsl:value-of select="."/>
+    </td>
 	</xsl:template>
 
-	<!--
-	<xsl:template match="channel/link"/>
-	<xsl:template match="channel/title"/>
-	<xsl:template match="channel/description"/>
-	<xsl:template match="channel/language"/>
-	-->
+  <xsl:template match="created">
+    <td nowrap="true">
+      <xsl:value-of select="."/>
+    </td>
+  </xsl:template>
 
+  <xsl:template match=""stripped"">
+    <xsl:variable name="stripped">
+      <xsl:call-template name="string-replace-all">
+        <xsl:with-param name="text" select="{.}" />
+        <xsl:with-param name="replace" select="'&amp;lt;'" />
+        <xsl:with-param name="by" select="'&lt;'" />
+      </xsl:call-template>
+    </xsl:variable>
+    <td nowrap="true">
+      <xsl:value-of select="$stripped"/>
+    </td>
+  </xsl:template>
 
+  <xsl:template name="string-replace-all">
+    <xsl:param name="text" />
+    <xsl:param name="replace" />
+    <xsl:param name="by" />
+    <xsl:choose>
+      <xsl:when test="contains($text, $replace)">
+        <xsl:value-of select="substring-before($text,$replace)" />
+        <xsl:value-of select="$by" />
+        <xsl:call-template name="string-replace-all">
+          <xsl:with-param name="text" select="substring-after($text,$replace)" />
+          <xsl:with-param name="replace" select="$replace" />
+          <xsl:with-param name="by" select="$by" />
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$text" />
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  
 </xsl:stylesheet>
-<!-- vim: set tw=10000:-->
