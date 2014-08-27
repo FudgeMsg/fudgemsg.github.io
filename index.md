@@ -76,5 +76,8 @@ something similar) the schema for each type of message channel, you might be bet
 * [License](docs/license.html) : Fudge libraries are offered under the [APLv2](http://www.apache.org/licenses/LICENSE-2.0.html).
 * [Copyright](docs/copyright.html) : Currently, all copyright to Fudge libraries is held by [OpenGamma](http://www.opengamma.com/) Inc.
 * Sponsorship : The Fudge Messaging project is sponsored by [OpenGamma](http://www.opengamma.com/).
+* Issue tracking : GitHub issues [Java](https://github.com/FudgeMsg/Fudge-Java/issues),
+[Proto](https://github.com/FudgeMsg/Fudge-Proto/issues), [CSharp](https://github.com/FudgeMsg/Fudge-CSharp/issues),
+[Historic](/jira/jira.html).
 * Forum : The Nabble [forum](http://fudge-messaging-discussion.36728.n3.nabble.com/).
 
