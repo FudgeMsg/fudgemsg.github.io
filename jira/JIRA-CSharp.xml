@@ -6,7 +6,6 @@ For example, to request only the issue key and summary add field=key&field=summa
 For example:
 http://jira.fudgemsg.org/sr/jira.issueviews:searchrequest-xml/temp/SearchRequest.xml?jqlQuery=project+%3D+FRN&tempMax=1000&field=key&field=summary
 -->
-<?xml-stylesheet href="jiraxml2html.xsl" type="text/xsl"?>
 <rss version="0.92">
     <channel>
         <title>Fudge Messaging JIRA</title>

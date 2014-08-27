@@ -8,7 +8,6 @@ http://jira.fudgemsg.org/sr/jira.issueviews:searchrequest-xml/temp/SearchRequest
 -->
 <!-- If you wish to do custom client-side styling of RSS, uncomment this:
 -->
-<?xml-stylesheet href="jiraxml2html.xsl" type="text/xsl"?>
 <rss version="0.92">
     <channel>
         <title>Fudge Messaging JIRA</title>
