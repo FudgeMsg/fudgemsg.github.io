@@ -43,7 +43,7 @@ This guide is intended for people wishing to develop Fudge-CSharp itself.
 
 At a bare minimum, you'll need:
 
-* An account on [GitHub|http://github.com/] and something like [GitGui](http://code.google.com/p/msysgit/downloads/list) to access it.
+* An account on [GitHub](http://github.com/) and something like [GitGui](http://code.google.com/p/msysgit/downloads/list) to access it.
 * [Visual C# 2008 Express](http://www.microsoft.com/express/vcsharp/) or better.
 * [XUnit](http://www.codeplex.com/xunit) (used for unit tests)
 
