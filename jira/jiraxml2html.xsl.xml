@@ -102,16 +102,9 @@
     </td>
   </xsl:template>
 
-  <xsl:template match=""stripped"">
-    <xsl:variable name="stripped">
-      <xsl:call-template name="string-replace-all">
-        <xsl:with-param name="text" select="{.}" />
-        <xsl:with-param name="replace" select="'&amp;lt;'" />
-        <xsl:with-param name="by" select="'&lt;'" />
-      </xsl:call-template>
-    </xsl:variable>
+  <xsl:template match="description">
     <td nowrap="true">
-      <xsl:value-of select="$stripped"/>
+      <xsl:value-of select="."/>
     </td>
   </xsl:template>
 
