@@ -32,7 +32,7 @@ Key feature summary:
 * Linq support.
 
 API documentation is available as a help file
-[here](http://fudgemsg.org/download/attachments/2359301/FudgeDocs.zip?version=2&modificationDate=1258795442241).
+[here](https://github.com/FudgeMsg/Fudge-CSharp/releases/download/v0.2/FudgeDocs-CSharp.zip).
 
 
 ### Getting started
