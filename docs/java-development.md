@@ -7,9 +7,9 @@ The Java reference implementation provides Fudge encoding on the Java platform.
 
 * The [GitHub home of the Java Reference Implementation](https://github.com/FudgeMsg/Fudge-Java)
 * The [Java Downloads](https://github.com/FudgeMsg/Fudge-Java/releases)
-* [Javadocs for the 0.3 version](javadoc/0.3/index.html)
-* [Javadocs for the 0.2 version](javadoc/0.2/index.html)
-* [Javadocs for the 0.1 version](javadoc/0.1/index.html) 
+* [Javadocs for the 0.3 version](/javadoc/0.3/index.html)
+* [Javadocs for the 0.2 version](/javadoc/0.2/index.html)
+* [Javadocs for the 0.1 version](/javadoc/0.1/index.html) 
 
 
 ### Development
