@@ -79,5 +79,6 @@ something similar) the schema for each type of message channel, you might be bet
 * Issue tracking : GitHub issues [Java](https://github.com/FudgeMsg/Fudge-Java/issues),
 [Proto](https://github.com/FudgeMsg/Fudge-Proto/issues), [CSharp](https://github.com/FudgeMsg/Fudge-CSharp/issues),
 [Historic](/jira/jira.html).
-* Forum : The Nabble [forum](http://fudge-messaging-discussion.36728.n3.nabble.com/).
+* Forum : The old Nabble [forum](http://fudge-messaging-discussion.36728.n3.nabble.com/) (use GitHub issues now).
+* Website : Edit this website at [GitHub](https://github.com/FudgeMsg/fudgemsg.github.io).
 
