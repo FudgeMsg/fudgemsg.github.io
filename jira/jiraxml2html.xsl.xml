@@ -14,6 +14,7 @@
 	<xsl:template match="/rss/channel">
 		<html>
 			<head>
+        <link rel="stylesheet" href="http://confluence.atlassian.com/styles/main-action.css" type="text/css"/>
 				<title>RSS - <xsl:value-of select="title"/></title>
 			</head>
 			<body>
@@ -103,9 +104,7 @@
   </xsl:template>
 
   <xsl:template match="description">
-    <td nowrap="true">
-      <xsl:value-of select="."/>
-    </td>
+    <xsl:value-of select="."/>
   </xsl:template>
 
   <xsl:template name="string-replace-all">
