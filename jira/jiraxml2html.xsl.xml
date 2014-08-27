@@ -109,7 +109,14 @@ body {
   </xsl:template>
 
   <xsl:template match="description">
-    <xsl:value-of select="."/>
+    <xsl:variable name="stripped">
+      <xsl:call-template name="string-replace-all">
+        <xsl:with-param name="text" select="{.}" />
+        <xsl:with-param name="replace" select="'attempt'" />
+        <xsl:with-param name="by" select="'foo'" />
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:value-of select="stripped"/>
   </xsl:template>
 
   <xsl:template name="string-replace-all">
