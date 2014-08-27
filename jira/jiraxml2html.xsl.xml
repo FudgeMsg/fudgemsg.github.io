@@ -14,11 +14,16 @@
 	<xsl:template match="/rss/channel">
 		<html>
 			<head>
-        <link rel="stylesheet" href="http://confluence.atlassian.com/styles/main-action.css" type="text/css"/>
+        <style>
+body {
+  font-size: 12px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+}
+        </style>
 				<title>RSS - <xsl:value-of select="title"/></title>
 			</head>
 			<body>
-				<table class="grid" cellspacing="0" width="100%">
+				<table class="grid" cellspacing="0" width="1000px">
 					<caption style="text-align: left; font-weight: bold">
 							<xsl:value-of select="title"/>
 							<span class="smalltext"> (<xsl:value-of select="count(item)"/> issues)</span>
