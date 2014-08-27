@@ -4,6 +4,7 @@ title: C# development
 ---
 
 * The [GitHub home of the C# Reference Implementation](https://github.com/FudgeMsg/Fudge-CSharp)
+* The [C# Downloads](https://github.com/FudgeMsg/Fudge-CSharp/releases)
 
 
 ### CSharp release process

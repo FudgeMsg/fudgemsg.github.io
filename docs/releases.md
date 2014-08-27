@@ -17,10 +17,8 @@ The v0.3 release was primarily a roll-up of fixes.
 
 The binary encoding format is considered stable, although additional types may be added to the standard set.
 
-* Java: [zip](http://dist.fudgemsg.org/java/dist/fudge-java-0.3.zip),
-[tar.bz2](http://dist.fudgemsg.org/java/dist/fudge-java-0.3.tar.bz2)
-* Proto: [zip](http://dist.fudgemsg.org/java/dist/fudge-proto-0.3.zip),
-[tar.bz2](http://dist.fudgemsg.org/java/dist/fudge-proto-0.3.tar.bz2)
+* [Java downloads](https://github.com/FudgeMsg/Fudge-Java/releases/tag/v0.3)
+* [Proto downloads](https://github.com/FudgeMsg/Fudge-Proto/releases/tag/v0.3)
 
 
 #### Release v0.2
@@ -30,7 +28,7 @@ Released 2010-02-25.
 This release focused on making the project more developer friendly.
 There are a number of enhancements that support this effort:
 
-* [Fudge Proto](fudge-proto.html) was written and released for 0.2.
+* [Fudge Proto](fudge-proto.html) was written and released for v0.2.
 * Java and C# reference implementations have support for streaming APIs for working with fields
 (so that you don't have to decode the whole message in order to process data encoded using Fudge).
 * Support for registering object encoders and decoders was done (for a JAXB-like use case) for Java and C#.
@@ -40,16 +38,10 @@ In addition, with the exception of moving from Modified UTF-8 to true UTF-8, the
 is now *stable* with the 0.2 release. If you're not attempting to encode data (such as unicode {{null}}) that doesn't
 encode differently, you won't notice any change in the binary encoding specification after this release.
 
-* Java: [zip](http://dist.fudgemsg.org/java/dist/fudge-java-0.2.zip),
-[tar.bz2](http://dist.fudgemsg.org/java/dist/fudge-java-0.2.tar.bz2),
-[Fedora Core 11 rpm](http://dist.fudgemsg.org/java/dist/fudge-java-0.2-beta1.fc11.noarch.rpm)
-* C#: [zip](http://dist.fudgemsg.org/csharp/dist/fudge-csharp-0.2.zip)
-* C: [Windows zip](http://dist.fudgemsg.org/c/dist/fudge-c-msvc-0.2.zip),
-[Generic tar.bz2](http://dist.fudgemsg.org/c/dist/fudge-c-0.2.tar.gz),
-[Fedora Core 11 rpm](http://dist.fudgemsg.org/c/dist/fudge-c-0.2-beta1.fc11.src.rpm)
-* Proto: [zip](http://dist.fudgemsg.org/java/dist/fudge-proto-0.2.zip),
-[tar.bz2](http://dist.fudgemsg.org/java/dist/fudge-proto-0.2.tar.bz2),
-[Fedora Core 11 rpm](http://dist.fudgemsg.org/java/dist/fudge-proto-0.2-beta1.fc11.noarch.rpm)
+* [Java downloads](https://github.com/FudgeMsg/Fudge-Java/releases/tag/v0.2)
+* [CSharp downloads](https://github.com/FudgeMsg/Fudge-CSharp/releases/tag/v0.2)
+* [C downloads](https://github.com/FudgeMsg/Fudge-CSharp/releases/tag/v0.2)
+* [Proto downloads](https://github.com/FudgeMsg/Fudge-Proto/releases/tag/v0.2)
 
 
 #### Release v0.1
@@ -57,7 +49,5 @@ encode differently, you won't notice any change in the binary encoding specifica
 Released late 2009.
 The first reference implementation in Java and C#.
 
+* [Java downloads](https://github.com/FudgeMsg/Fudge-Java/releases/tag/v0.1)
 
-#### Distribution directory
-
-Simple distribution [directory](http://dist.fudgemsg.org/java/dist/).

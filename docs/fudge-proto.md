@@ -56,6 +56,9 @@ comparisons, hash codes, and string representations.
 
 ### Getting Started
 
+* The [GitHub home of Fudge-Proto](https://github.com/FudgeMsg/Fudge-Proto)
+* The [Downloads](https://github.com/FudgeMsg/Fudge-Proto/releases)
+
 To get started you will need the pre-built Jar file, available from [releases](releases.html),
 in your class path and use the [Command Line Reference](fudge-proto-command-line.html) or
 [Ant](fudge-proto-java.html) if you are working with Java.
