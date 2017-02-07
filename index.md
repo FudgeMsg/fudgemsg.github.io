@@ -4,7 +4,13 @@ title: Fudge Messaging - Home page and Documentation
 subtitle: The FudgeMsg project
 ---
 
-This is the home page of the Fudge Messaging project.
+This was the home page of the Fudge Messaging project.
+
+**Fudge is no longer actively maintained.**
+
+OpenGamma, the primary sponsors of Fudge, no longer use or maintain Fudge. This page is retained for historical reasons.
+
+-----
 
 [Fudge](docs/acronym.html) is a binary messaging system designed to scale from ad-hoc messages to long-term persistence.
 
@@ -75,10 +81,9 @@ something similar) the schema for each type of message channel, you might be bet
 ### Project Details
 * [License](docs/license.html) : Fudge libraries are offered under the [APLv2](http://www.apache.org/licenses/LICENSE-2.0.html).
 * [Copyright](docs/copyright.html) : Currently, all copyright to Fudge libraries is held by [OpenGamma](http://www.opengamma.com/) Inc.
-* Sponsorship : The Fudge Messaging project is sponsored by [OpenGamma](http://www.opengamma.com/).
+* Sponsorship : The Fudge Messaging project was sponsored by [OpenGamma](http://www.opengamma.com/) but is no longer maintained.
 * Issue tracking : GitHub issues [Java](https://github.com/FudgeMsg/Fudge-Java/issues),
 [Proto](https://github.com/FudgeMsg/Fudge-Proto/issues), [CSharp](https://github.com/FudgeMsg/Fudge-CSharp/issues),
 [Historic](/jira/jira.html).
-* Forum : The old Nabble [forum](http://fudge-messaging-discussion.36728.n3.nabble.com/) (use GitHub issues now).
 * Website : Edit this website at [GitHub](https://github.com/FudgeMsg/fudgemsg.github.io).
 
