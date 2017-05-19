@@ -12,7 +12,7 @@ OpenGamma, the primary sponsors of Fudge, no longer use or maintain Fudge. This 
 
 -----
 
-[Fudge](docs/acronym.html) is a binary messaging system designed to scale from ad-hoc messages to long-term persistence.
+[Fudge](acronym.html) is a binary messaging system designed to scale from ad-hoc messages to long-term persistence.
 
 In addition, the major reference implementations allow for the use of Fudge Messages (as code-level objects)
 to act as a meta-encoding scheme, allowing translation on the fly to-from XML, JSON, or any other hierarchical format
@@ -24,7 +24,7 @@ There are a number of well-known messaging systems available. Some focus only sm
 Others focus on self-description, where the "tag name" is included against each data item.
 Fudge is different because it allows both.
 
-A Fudge message is **binary encoded**. There is a detailed [specification](docs/specification.html) outlining the format.
+A Fudge message is **binary encoded**. There is a detailed [specification](specification.html) outlining the format.
 Binary has been chosen over textual formats like XML or JSON to obtain a more compact representation of the data
 for the network.
 
@@ -35,7 +35,7 @@ creating a nested structure of arbitary depth and complexity.
 A Fudge message is **field-based**. Each message or sub-message is a partly ordered collection of fields.
 The field stores the data item, plus a minimum of two bytes of meta-data.
 
-A Fudge message is **typesafe**. [Types](docs/types.html) add meaning and safety to data.
+A Fudge message is **typesafe**. [Types](types.html) add meaning and safety to data.
 This is especially useful when storing data for longer periods of time or when receiving data without a schema.
 Each field uses a single byte to store the type.
 Fudge defines a core set of about 30 types and this can be extended if desired.
@@ -52,15 +52,15 @@ content, it can be used with HTTP, JMS, AMQP and many other underlying transport
 ### Project Status
 Fudge is in active use. Key components are:
 
-* A binary [Encoding Specification](docs/specification.html) that defines how Fudge data is to be encoded;
-* A [Java](docs/java-development.html) reference implementation.
-* A [C#/.Net](docs/csharp-development.html) reference implementation.
-* A [C](docs/c-development.html) reference implementation.
-* A [C++](docs/cpp-development.html) implementation.
-* A [Google Protocol Buffers](docs/fudge-proto.html) compatibility library.
-* Conversion to [XML](docs/xml.html) and [JSON](docs/json.html) is supported.
+* A binary [Encoding Specification](specification.html) that defines how Fudge data is to be encoded;
+* A [Java](java-development.html) reference implementation.
+* A [C#/.Net](csharp-development.html) reference implementation.
+* A [C](c-development.html) reference implementation.
+* A [C++](cpp-development.html) implementation.
+* A [Google Protocol Buffers](fudge-proto.html) compatibility library.
+* Conversion to [XML](xml.html) and [JSON](json.html) is supported.
 
-You can track the precise status in our [Releases](docs/releases.html) page.
+You can track the precise status in our [Releases](releases.html) page.
 
 
 ### Why Should I Use Fudge?
@@ -79,8 +79,8 @@ something similar) the schema for each type of message channel, you might be bet
 
 
 ### Project Details
-* [License](docs/license.html) : Fudge libraries are offered under the [APLv2](http://www.apache.org/licenses/LICENSE-2.0.html).
-* [Copyright](docs/copyright.html) : Currently, all copyright to Fudge libraries is held by [OpenGamma](http://www.opengamma.com/) Inc.
+* [License](license.html) : Fudge libraries are offered under the [APLv2](http://www.apache.org/licenses/LICENSE-2.0.html).
+* [Copyright](copyright.html) : Currently, all copyright to Fudge libraries is held by [OpenGamma](http://www.opengamma.com/) Inc.
 * Sponsorship : The Fudge Messaging project was sponsored by [OpenGamma](http://www.opengamma.com/) but is no longer maintained.
 * Issue tracking : GitHub issues [Java](https://github.com/FudgeMsg/Fudge-Java/issues),
 [Proto](https://github.com/FudgeMsg/Fudge-Proto/issues), [CSharp](https://github.com/FudgeMsg/Fudge-CSharp/issues),
